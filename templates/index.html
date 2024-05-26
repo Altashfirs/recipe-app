@@ -128,11 +128,12 @@
             		<li>
 						{% if recipe.image %}
 	                    <div class="recipe">
+						<a href="{{ url_for('view_recipe', recipe_id=recipe.id, search_query=search_query) }}">
 	            		   <img src="{{ recipe.image }}" alt="{{ recipe.title }}" class="image top-5">
 						   {% endif %}
-	            		   <h3 class="top-1">{{ recipe.title }}</h3>
+							<h3 class="top-1">{{ recipe.title }}</h3>
+						   </a>
 						   <button class="bookmark-btn">Bookmark</button>
-	            		   <a href="{{ url_for('view_recipe', recipe_id=recipe.id, search_query=search_query) }}">View</a>
 	            		</div>
                     </li><!--the end of div-->
                    {% endfor %}
