@@ -8,6 +8,14 @@ app = Flask(__name__)
 # Replace with your Spoonacular API key
 API_KEY = '103b30e0ad8e4126a462bf24a23bcd8f'
 
+@app.route('/about')
+def about():
+    return render_template('aboutus.html')
+
+@app.route('/login')
+def login():
+    return render_template('login.html')
+
 # Define the route for the "Home" button
 @app.route('/home', methods=['GET'])
 def home():
