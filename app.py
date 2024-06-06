@@ -10,10 +10,10 @@ app = Flask(__name__)
 app.secret_key = b'_5#y2L"F4Q8z\n\xec]/'
 
 # MySQL configurations
-app.config['MYSQL_HOST'] = 'localhost'
-app.config['MYSQL_USER'] = 'root'
-app.config['MYSQL_PASSWORD'] = ''
-app.config['MYSQL_DB'] = 'recipe'
+app.config['MYSQL_HOST'] = 'sql311.infinityfree.com'
+app.config['MYSQL_USER'] = 'if0_34372710'
+app.config['MYSQL_PASSWORD'] = 'FX4IrHjAj9JPMa'
+app.config['MYSQL_DB'] = 'if0_34372710_project'
 app.config['MYSQL_CURSORCLASS'] = 'DictCursor'
 
 # Initialize MySQL
