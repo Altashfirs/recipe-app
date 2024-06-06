@@ -20,7 +20,7 @@ app.config['MYSQL_CURSORCLASS'] = 'DictCursor'
 mysql = MySQL(app)
 
 # Replace with your Spoonacular API key
-API_KEY = '103b30e0ad8e4126a462bf24a23bcd8f'
+API_KEY = '103b30e0ad8e4126a462bf24a23bcd8'
 
 @app.route('/about')
 def about():
