@@ -316,22 +316,22 @@ padding-bottom:14px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	min-height: 80vh;
+	min-height: 70vh;
 	/background: #6b6b6b;
 	box-sizing: border-box;
   	position: absolute;
-  	top: 62%;
+  	top: 58%;
   	left: 50%;
   	transform: translate(-50%, -50%);
  	width: 420px;
-	height: 400px;
+	height: 410px;
   	background: transparent;
   	border: 2px solid rgba(50, 50, 50, 0.2);
-  	backdrop-filter: blur(20px);
+  	backdrop-filter: blur(30px);
 	border-top-width: 5px;
   	color: #181818;
   	border-radius: 15px;
-  	padding: 100px 20px;
+  	padding: 80px 20px;
   	z-index: 2;
 }
 
@@ -342,7 +342,7 @@ padding-bottom:14px;
 	backdrop-filter: blur(20px);
 	color: #181818;
 	border-radius: 10px;
-	padding: 30px 40px;
+	padding: 5px 50px;
 	
 }
 
@@ -437,7 +437,35 @@ padding-bottom:14px;
 	text-decoration: underline;
 }
 
+/* -----------------------untuk tombol view----------------------- */
+.view-link {
+    color: rgb(251, 251, 251); 
+    text-decoration: none; /* Menghapus garis bawah default pada tautan */
+	background: #d6bf56;
+	padding: 6px;
+	position: relative;
+	left: 12px;
+	top: 11px;
+	border-radius: 20px;	
+}
 
+.view-link:hover {
+	background-color: #fff;
+	color: #333;
+}
+
+/* =============== bentuk gambar resep di index ==================== */
+.recipe-item {
+	margin-bottom: 20px;
+}
+
+.bundar {
+    border-radius: 50%;      /* Membuat gambar berbentuk bundar */
+    width: 225px;            /* Sesuaikan ukuran sesuai kebutuhan */
+    height: 225px;           /* Pastikan tinggi dan lebar sama untuk gambar bundar */
+    object-fit: cover;       /* Menjaga aspek rasio dan memastikan gambar tidak terdistorsi */
+    margin: 10px;            /* Menambah jarak antar elemen */
+}
 
 /*********************************user button*************************************/
 .user-btn {
@@ -460,6 +488,23 @@ padding-bottom:14px;
 	width: 10px;
 	height: 0px;
 	font-size: 20px;
+}
+
+.message {
+	color: red;
+	text-align: center;
+}
+
+/* ==================== logout button ================================= */
+.logout-btn {
+	position: relative;
+	color: #d1a560;
+	width: 100px;
+	top: 59px;
+	right: -375px;
+	width: 10px;
+	height: 0px;
+	font-size: 23px;
 }
 
 /*********************************content*************************************/
@@ -605,9 +650,17 @@ padding-bottom:14px;
 	right: -40px;
 	top: 80px;
   	margin: 10px 0;
-  	padding: 10px;
+  	padding: 8px;
 	font-weight: bold;
-	color: #c87d37;
+	color: #fafafa;
+	background: #d19760;
+	border-radius: 20px;
+	width: 146px;
+ }
+
+ .deskripsi:hover {
+	background-color: #fff;
+	color: #333;
  }
 
  #deskripsi-anchor{
@@ -623,6 +676,8 @@ padding-bottom:14px;
 	color: #482610;
 	font-family: Arial, Helvetica, sans-serif;
  }
+
+
 
 /**********************************index-1*********************************/
 .bg-bot{
@@ -842,6 +897,8 @@ ul.sf-menu>li.current>a, ul.sf-menu>li.sfHover>a, ul.sf-menu>li>a:hover{color:#3
   /*===============================bookmark-button=========================*/
 
 .bookmark-btn {
+	margin-bottom: 10px 0;
+	margin: 8px 0;
 	padding: 5px 10px;
   	background-color: #333;
   	color: #fff;

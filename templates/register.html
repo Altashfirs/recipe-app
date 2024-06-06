@@ -72,7 +72,7 @@
 							}
 						</script>
 						<li><a href="about">About Us</a></li>
-						<li class=""><a href="/">Our Recipes</a>
+						<li class=""><a href="recipes">Our Recipes</a>
 						</li>
 						<li><a href="bookmark" id="bookmarks-link">Bookmark</a></li>
 					</ul>
@@ -83,13 +83,13 @@
 		<!--==============================content================================-->
 		<div class="login">
 			<div class="wrapper">
-				<h4>Login</h2>
+				<h4>Register</h2>
 					{% for message in get_flashed_messages() %}
 					<div class="message">
 						{{ message }}
 					</div>
 					{% endfor %}
-					<form action="{{ url_for('login') }}" id="loginForm" method="post">
+					<form action="{{ url_for('register') }}" id="loginForm" method="post">
 						<div class="box-input">
 							<input type="text" name="username" placeholder="username" id="username" required>
 							<i class='bx bxs-user'></i>
@@ -100,7 +100,7 @@
 						</div>
 						<button class="btn"><input type="submit" value="Login"></button>
 						<div class="register">
-							<p>Don't have an account? <a href="register"> Register</a></p>
+							<p>Do you have an account? <a href="login"> Login</a></p>
 						</div>
 					</form>
 			</div>
