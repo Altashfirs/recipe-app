@@ -57,11 +57,7 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`id`, `username`, `password`) VALUES
 (1, 'Bayu', '$2b$12$kKSmd.YguqXPSppGjLja1OVHfNEBS0df8.eAuAZqe6wfU2ZiREEXG'),
-(2, 'Bintang', '$2b$12$yVplB./Oz3/Qc25vL/yV9O25Q5QgOXVptJ2JMzSG7EK/yqCRBQ.na'),
-(3, 'Akbar', '$2b$12$3bGYGd4YLVd7dD9AyAqmceBEjbc5MWbMS8Cgv5TpWoLgoLgEMjPru'),
-(4, 'Aini', '$2b$12$laxCVWD9RDYXQY7kheJy8OA0rTejxv4497s6DyyeL.7PG7M5KZXaC'),
-(5, 'Nawra', '$2b$12$laxCVWD9RDYXQY7kheJy8OA0rTejxv4497s6DyyeL.7PG7M5KZXaC'),
-(6, 'akbar@', '$2b$12$ZJSyYsBKCP3YIPk2iJksnOpt9UU7KYiTspmuOBJ9DUXMiXA6rVHjO');
+(2, 'Bintang', '$2b$12$yVplB./Oz3/Qc25vL/yV9O25Q5QgOXVptJ2JMzSG7EK/yqCRBQ.na');
 
 --
 -- Indexes for dumped tables
