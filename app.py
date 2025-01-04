@@ -7,20 +7,20 @@ import bcrypt
 
 # Create the flask app
 app = Flask(__name__)
-app.secret_key = b'_5#y2L"F4Q8z\n\xec]/'
+app.secret_key = b''
 
 # MySQL configurations
-app.config['MYSQL_HOST'] = 'sql311.infinityfree.com'
-app.config['MYSQL_USER'] = 'if0_34372710'
-app.config['MYSQL_PASSWORD'] = 'FX4IrHjAj9JPMa'
-app.config['MYSQL_DB'] = 'if0_34372710_project'
+app.config['MYSQL_HOST'] = ''
+app.config['MYSQL_USER'] = ''
+app.config['MYSQL_PASSWORD'] = ''
+app.config['MYSQL_DB'] = ''
 app.config['MYSQL_CURSORCLASS'] = 'DictCursor'
 
 # Initialize MySQL
 mysql = MySQL(app)
 
 # Replace with your Spoonacular API key
-API_KEY = '103b30e0ad8e4126a462bf24a23bcd8'
+API_KEY = ''
 
 @app.route('/about')
 def about():
